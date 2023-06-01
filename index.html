@@ -5,31 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Encypter</title>
 </head>
 
 <body>
     <header>
-        <h1> <a href="index.html"> Encrypt</a> </h1>
+        <h1 class="encrypterLogo"> <a href="index.html"><img src="resourses/encrypterLogo.png" alt="Encrypter Logo"
+                    srcset=""></a>
+        </h1>
     </header>
+
     <main class="mainContainer">
         <section class="encryptDecryptArea">
-            <fieldset>
-                <form action="">
-                    <textarea class="forEncryptText" name="encryptArea" id="translateText" cols="30"
-                        rows="10"></textarea>
-                    <button>Encrypt</button>
-                    <button>Decrypt</button>
-                </form>
-            </fieldset>
+            <textarea class="forEncryptText" id="" cols="30" rows="10" placeholder="Enter text here"></textarea>
+            <h4 class="textAreaFooter"><img src="resourses/bi_exclamation-circle-fill.png" alt="IMPORTANT"> Only
+                lowercase with no accent</h4>
+            <button onclick="" class="encryptBtn">Encrypt</button>
+            <button onclick="" class="decryptBtn">Decrypt</button>
         </section>
         <section class="resultArea">
-
-            <div class="imageArea">
+            <div class="resultContainer">
+                <p class="resultText" id="resultText"> </p>
+            </div>
+            <!-- <div class="imageArea">
                 <img class="lookingResultImage" src="resourses/result.png" alt="looking for something to encrypt">
+                <h2>Looking for something to encrypt</h2>
+            </div> -->
+
+            <div class="noResultCard">
+                <img src="resourses/result.png" alt="Looking for something for encrypt" class="noResultCard-img">
+                <div class="noResultCard-content">
+                    <h2 class="noResultCard-title">Looking for something to encrypt</h2>
+                    <p class="noResultCard-description">Please enter a text for encrypt</p>
+                </div>
             </div>
         </section>
     </main>
+
+    <script src="scrypt.js"></script>
 
 
 </body>

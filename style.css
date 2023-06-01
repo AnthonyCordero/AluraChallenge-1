@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-input-placeholder {
+    color: #D3DBFF;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.encrypterLogo {
+    margin: 0 0 0 20px;
+}
+
+.mainContainer {
+    width: 1200px;
+    height: 800px;
+}
+
+.encryptDecryptArea {
+    width: 60%;
+    height: 600px;
+    display: inline-block;
+    margin: 0 0 0 5%;
+}
+
+.forEncryptText {
+    display: block;
+    width: 80%;
+    height: 80%;
+    text-align: initial;
+    box-shadow: 5px 5px 20px 10px #D3DBFF;
+    border: none;
+}
+
+.forEncryptText:focus {
+    outline-color: #0A3871;
+}
+
+.textAreaFooter {
+    color: #D3DBFF;
+}
+
+.encryptBtn {
+    width: 40%;
+    padding: 10px 40px;
+    border-radius: 15px;
+    font-size: 20px;
+    background: #0A3871;
+    border: 1px solid #002843;
+    color: white;
+}
+
+.decryptBtn {
+    width: 40%;
+    padding: 10px 40px;
+    margin: 20px 0 0 0%;
+    border-radius: 15px;
+    font-size: 20px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+
+.resultArea {
+    vertical-align: top;
+    width: 27%;
+    height: 612px;
+    display: inline-flex;
+    box-shadow: 5px 5px 20px 10px #D3DBFF;
+}
+
+.noResultCard {
+    width: 70%;
+    margin: 10% auto;
+}
+
+.noResultCard-img {
+    width: 80%;
+    margin: 50% 15%;
+}
+
+.noResultCard-title {
+    font-size: 25px;
+    text-align: center;
+    color: #0A3871;
+}
+
+.noResultCard-description {
+    font-size: 16px;
+    text-align: center;
+    color: #D3DBFF;
+}
