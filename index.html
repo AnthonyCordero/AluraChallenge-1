@@ -24,40 +24,28 @@
             <button onclick="" class="encryptBtn">Encrypt</button>
             <button onclick="" class="decryptBtn">Decrypt</button>
         </section>
-        <section class="resultArea">
+
+        <div class="resultArea">
             <div class="resultContainer">
-                <p class="resultText" id="resultText">Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-                    pariatur iusto beatae alias! Quisquam provident quia deserunt, iure nam animi qui id cum laudantium.
-                    Provident reiciendis numquam porro repudiandae vel.Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. In
-                    pariatur iusto beatae alias! Quisquam provident quia deserunt, iure nam animi qui id cum laudantium.
-                    Provident reiciendis numquam porro repudiandae vel.Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. In
-                    pariatur iusto beatae alias! Quisquam provident quia deserunt, iure nam animi qui id cum laudantium.
-                    Pr. pariatur iusto beatae alias! Quisquam provident quia deserunt, iure nam animi qui id cum
-                    laudantium.
-                    Provident reiciendis numquam porro repudiandae vel.Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. In
-                    pariatur iusto beatae alias! Quisquam provident quia deserunt, iure nam animi qui id cum laudantium.
-                    pariatur iusto beatae alias! Quisquam provident quia deserunt, iure nam animi qui id cum laudantium.
-                    Provident reiciendis numquam porro repudiandae vel.Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. In
-                    pariatur iusto beatae alias! Quisquam provident quia deserunt, iure nam animi qui id cum laudantium.
-                </p>
-                <button id="forCopyText" onclick="" class="copyBtn">Copy Text</button>
+                <section id="resultArea">
+                    <div id="showNoResult">
+                        <div class="noResultCard">
+                            <img src="resourses/result.png" alt="Looking for something for encrypt"
+                                class="noResultCard-img">
+                            <h2 class="noResultCard-title">Looking for something to encrypt</h2>
+                            <p class="noResultCard-description">Please enter a text for encrypt</p>
+                        </div>
+                    </div>
+                    <div id="resultText">
+                        <textarea class="resultText" readonly></textarea>
+                    </div>
+                </section>
+                <button class="copyBtn" id="forCopyText">Copy Text</button>
             </div>
-            <!-- <div id="showNoResult" class="noResultCard">
-                <img src="resourses/result.png" alt="Looking for something for encrypt" class="noResultCard-img">
-                <div class="noResultCard-content">
-                    <h2 class="noResultCard-title">Looking for something to encrypt</h2>
-                    <p class="noResultCard-description">Please enter a text for encrypt</p>
-                </div>
-            </div> -->
-        </section>
+        </div>
     </main>
 
     <script src="scrypt.js"></script>
-
 
 </body>
 
